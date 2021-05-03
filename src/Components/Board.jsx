@@ -86,15 +86,15 @@ export default function Board() {
     <>
       <div className="status">{displayStatus(square)}</div>
       <div className="grid">
-        <Square value={square[0]} index={0} clicksHandler={changeVal} />
-        <Square value={square[1]} index={1} clicksHandler={changeVal} />
-        <Square value={square[2]} index={2} clicksHandler={changeVal} />
-        <Square value={square[3]} index={3} clicksHandler={changeVal} />
-        <Square value={square[4]} index={4} clicksHandler={changeVal} />
-        <Square value={square[5]} index={5} clicksHandler={changeVal} />
-        <Square value={square[6]} index={6} clicksHandler={changeVal} />
-        <Square value={square[7]} index={7} clicksHandler={changeVal} />
-        <Square value={square[8]} index={8} clicksHandler={changeVal} />
+        <Square value={square[0]} index={0} clicksHandler={changeVal} disabled={status[0]==="N"?false:true} />
+        <Square value={square[1]} index={1} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
+        <Square value={square[2]} index={2} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
+        <Square value={square[3]} index={3} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
+        <Square value={square[4]} index={4} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
+        <Square value={square[5]} index={5} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
+        <Square value={square[6]} index={6} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
+        <Square value={square[7]} index={7} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
+        <Square value={square[8]} index={8} clicksHandler={changeVal} disabled={status[0]==="N"?false:true}/>
       </div>
 
       <div className="states">
